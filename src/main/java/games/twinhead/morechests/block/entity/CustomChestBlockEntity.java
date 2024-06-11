@@ -106,7 +106,6 @@ public abstract class CustomChestBlockEntity extends ChestBlockEntity {
         }
     }
 
-    @Environment(EnvType.CLIENT)
     public static void playSound(World world, BlockPos pos, BlockState state, SoundEvent soundEvent) {
         ChestType chestType = state.get(ChestBlock.CHEST_TYPE);
         if (chestType == ChestType.LEFT) {
